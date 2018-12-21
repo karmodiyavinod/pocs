@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: http://* 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: gap: http://* 'unsafe-eval';">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>First Cordova App</title>
+</head>
+<body onload="init();">
+    <div class="app">
+        <div id="deviceready" class="blink" style="margin: 10px;">
+            <div class="event listening">
+                <div class="alert alert-warning" role="alert">
+                    <span>Connecting to Device</span>
+                </div>
+            </div>
+            <div class="event received">
+                <div id="frmLogin">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <button class="btn btn-primary" id="exampleSubmit">Submit</button>
+                
+                    <br/><br/><br/>
+                    <div style="font-size: 6px;">
+            <p><i>'test' is your Gate Pass!</i></p>
+                    </div>
+                </div>
+                <div id="divLoggedIn"></div>
+                <div id="divLoggedInFeature" style="display: none;">
+                    <h2>CORDOVA ELEMENT</h2>
+                    <button class="btn btn-primary" id="exampleCamera">TAKE PICTURE</button>
+                    <button class="btn btn-secondary" id="examplePicture">GET PICTURE</button>
+                    <br />
+                    <img id="exampleImage" style="display:none; border: red 1px solid;"></img>
+                    <br />
+                    <hr />
+                    <h2>JAVASCRIPT</h2>
+                    <div class="form-group">
+                        <label for="exampleCalText1">Variable A</label>
+                        <input id="exampleCalText1" type="number" style="width: 75px" placeholder="Variable 1" />
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleCalText1">Variable B</label>
+                        <input id="exampleCalText2" type="number" style="width: 75px" placeholder="Variable 2" />
+                    </div>
+                    <div id="divExampleCalc"></label>
+                    <button class="btn btn-secondary" id="examplePlus">(A+B)</button>
+                    <button class="btn btn-secondary" id="exampleMinus">(A-B)</button>
+                    <button class="btn btn-secondary" id="exampleMulti">(A*B)</button>
+                    <button class="btn btn-secondary" id="exampleDivide">(A/B)</button>
+                    <hr />
+                    <h2>WINDOW MAIL TO (JQUERY)</h2>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Enter Email" id="exampleEmail">
+                        <div class="input-group-append">
+                            <button class="btn btn-warning" id="exampleMailTo">Email</button>
+                        </div>
+                    </div>
+                    <hr />
+                    <h2>JQUERY GET CALL</h2>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Search by name" id="txtexampleSearch">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" id="exampleSearch">Search</button>
+                        </div>
+                    </div>
+                    <div id="exampleSearchList"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
