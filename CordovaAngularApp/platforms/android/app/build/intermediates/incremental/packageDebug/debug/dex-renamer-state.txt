@@ -1,4 +1,0 @@
-#Fri Dec 21 08:09:42 IST 2018
-base.0=D\:\\Work\\POCs\\CordovaPOCs\\Milap\\V2\\CordovaAngularApp\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex
